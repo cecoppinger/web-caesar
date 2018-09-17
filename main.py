@@ -8,13 +8,30 @@ form = """
 <html>
   <head>
     <title>Web Caesar</title>
+    <style>
+      form{
+        background-color: #eee;
+        padding: 20px;
+        margin: 0 auto;
+        width: 540px;
+        font: 16px sans-serif;
+        border-radius: 10px;
+      }
+      textarea {
+        margin: 10px 0;
+        width: 540px;
+        height: 120px;
+      }
+    </style>
   </head>
   <body>
-    <form>
+    <form method="post">
       <label>Rotate by:
-        <input type="number" value="0" name="rotate-by">
+        <input type="number" value="0" name="rot">
       </label>
-      <textarea name="message"></textarea>
+      <br>
+      <textarea name="text"></textarea>
+      <input type="submit">
     </form>
   </body>
 </html>
